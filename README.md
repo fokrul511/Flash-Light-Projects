@@ -65,7 +65,5 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/1GrQm8f/Screenshot-20231104-000041.jpg)
-
-![](https://i.ibb.co/JFjXJ7G/Screenshot-20231104-000050.jpg)
+![App Screenshot](https://i.ibb.co/JFjXJ7G/Screenshot-20231104-000050.jpg)
 
