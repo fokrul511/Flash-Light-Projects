@@ -9,10 +9,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final bgColor = const Color(0xff2C3333);
-  final textColor = const Color(0xffE7F6F2);
-  var isActive = false;
-  var controller = TorchController();
+  final bgColor = const Color(0xff2C3333);//Background Color
+  final textColor = const Color(0xffE7F6F2);//textColor
+  var isActive = false;//controller Conditon
+  var controller = TorchController();//TouchCotroller
 
 
   @override
@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          'Tourc Light',
+          'Tourc Light',//Appbar title...
           style: TextStyle(color: textColor),
         ),
         centerTitle: true,
@@ -38,11 +38,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    isActive ? 'assets/on.png' : 'assets/off.png',
-                    height: size.height * 0.5,
+                    isActive ? 'assets/on.png' : 'assets/off.png',// if light is on then image on,,other wise off image
+                   // height: 200,//image size convert with mediya quriye
                   ),
                   SizedBox(
-                    height: size.height * 0.1,
+                    height: 50,
                   ),
                   CircleAvatar(
                     minRadius: 30,
@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             setState(() {
 
                             });
-                          }, icon: Icon(Icons.power_settings_new)),
+                          }, icon:const Icon(Icons.power_settings_new),color: isActive?Colors.red:Colors.white),
                     ),
                   ),
                 ],
@@ -64,14 +64,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Text(
-            'Develope By: Fokrul Islam',
+            'Develope By: Fokrul Islam',// developer name
             style: TextStyle(
               color: textColor,
               fontSize: 14.0,
             ),
           ),
           SizedBox(
-            height: size.height * 0.05,
+            height: size.height * 0.02,
           )
         ],
       ),
